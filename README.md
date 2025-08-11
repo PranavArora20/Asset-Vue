@@ -17,7 +17,6 @@ Frontend (with BAAS(Backend As a Service): Firebase Realtime Database)
 
 ## Deployed App
 - Frontend: [View](https://asset-vue.netlify.app/)
-- Database: [Link](https://asset-vue-default-rtdb.firebaseio.com)
 
 Tip: After you deploy (e.g., Netlify/Vercel), add the VITE_ environment variables in the hosting platform settings.
 
