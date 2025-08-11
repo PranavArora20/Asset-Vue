@@ -1,0 +1,171 @@
+/* Remove default body spacing */
+body {
+  margin: 0;
+  padding-top: 60px; /* space for fixed navbar */
+  background-color: #f4f4f9; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make Ant Design menu items slimmer so all fit */
+.ant-menu-horizontal > .ant-menu-item {
+  padding: 0 16px !important;
+}
+
+/* Hover underline animation */
+.ant-menu-horizontal > .ant-menu-item a {
+  position: relative;
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.ant-menu-horizontal > .ant-menu-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #00E6A8;
+  transition: width 0.3s ease;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover a::after,
+.ant-menu-horizontal > .ant-menu-item-selected a::after {
+  width: 100%;
+}
+
+.ant-menu-horizontal > .ant-menu-item{
+  /* background-color: #004d80 !important;  */
+  border-radius: 6px !important;
+}
+
+/* Light mode (default) */
+.app.light-mode {
+  background-color: #f4f4f9;
+  color: #333;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode */
+.app.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode overrides for better visibility */
+.app.dark-mode .portfolio-container,
+.app.dark-mode .comparison-container {
+  color: #ffffff;
+}
+
+.app.dark-mode .portfolio-header h1,
+.app.dark-mode .portfolio-header h2,
+.app.dark-mode .portfolio-header h3,
+.app.dark-mode .comparison-card h2,
+.app.dark-mode .comparison-card h3,
+.app.dark-mode .portfolio-summary h2,
+.app.dark-mode .portfolio-summary h3,
+.app.dark-mode .portfolio-summary h4 {
+  color: #ffffff !important;
+}
+
+.app.dark-mode .portfolio-header p,
+.app.dark-mode .comparison-card p,
+.app.dark-mode .portfolio-summary p {
+  color: #e5e7eb !important;
+}
+
+.app.dark-mode .portfolio-card,
+.app.dark-mode .comparison-card {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+  color: #ffffff !important;
+}
+
+.app.dark-mode .portfolio-card h3,
+.app.dark-mode .portfolio-card p,
+.app.dark-mode .comparison-card h2,
+.app.dark-mode .comparison-card h3,
+.app.dark-mode .comparison-card p {
+  color: #ffffff !important;
+}
+
+.app.dark-mode .filter-section,
+.app.dark-mode .add-asset-section {
+  background-color: #2d2d2d !important;
+  border-color: #404040 !important;
+}
+
+.app.dark-mode .filter-section h3 {
+  color: #ffffff !important;
+}
+
+.app.dark-mode .debug-info {
+  background-color: #374151 !important;
+  color: #d1d5db !important;
+}
+
+.app.dark-mode .debug-info summary {
+  color: #ffffff !important;
+}
+
+.app.dark-mode .debug-info pre {
+  background-color: #4b5563 !important;
+  color: #e5e7eb !important;
+}
+
+/* Portfolio Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.filter-bar button {
+  background-color: var(--primary-bg, #f0f0f0);
+  color: var(--primary-text, #333);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-bar button:hover {
+  background-color: var(--primary-hover, #0077ff);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.filter-bar button.active {
+  background-color: var(--primary-active, #005bcc);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.asset-card {
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.asset-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
