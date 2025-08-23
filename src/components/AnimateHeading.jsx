@@ -16,3 +16,4 @@ export default function AnimatedHeading() {
     </h1>
   );
 }
+ 
