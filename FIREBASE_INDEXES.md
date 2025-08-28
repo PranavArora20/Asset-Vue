@@ -243,3 +243,4 @@ If you see errors like "The query requires an index", follow the link in the err
 - Indexes build in the background
 - Large collections may take longer
 - Monitor progress in Firebase Console 
+ 
