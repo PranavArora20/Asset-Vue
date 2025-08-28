@@ -16,7 +16,7 @@ It’s built with a modern, maintainable architecture and attention to accessibi
 Frontend (with BAAS(Backend As a Service): Firebase Realtime Database)
 
 ## Deployed App
-- Frontend: [View](https://asset-vue.netlify.app/)
+- Frontend: [View](https://asset-vue-investment-tracker.netlify.app/)
 
 Tip: After you deploy (e.g., Netlify/Vercel), add the VITE_ environment variables in the hosting platform settings.
 
